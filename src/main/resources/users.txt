@@ -1,0 +1,1 @@
+[{"name":"Ihor","role":"JUNIOR"}, {"name":"Artem","role":"SENIOR"}]
