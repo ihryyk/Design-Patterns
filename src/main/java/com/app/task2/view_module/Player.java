@@ -1,20 +1,15 @@
 package com.app.task2.view_module;
 
-import com.app.task2.model.entity.PlayerState;
-
 public interface Player {
 
-    PlayerState getState();
+  void addObserver(PlayerObserver observer);
 
-    void playOrStop();
+  void playOrStop();
 
-    void next();
+  void next();
 
-    void previous();
+  void previous();
 
-    void repeatOnOrOff();
+  void repeatOnOrOff();
 
-    String getCurrentTrack();
-
-    boolean isRepeat();
 }
