@@ -36,6 +36,7 @@ public class MusicPlayerViewModule implements Player {
     }
     state = PlayerState.PLAYING;
     notifyObserversPlayerStateChanged();
+    notifyObserversTrackChange();
     log.info("Playing: {}", getCurrentTrack());
   }
 
@@ -65,7 +66,7 @@ public class MusicPlayerViewModule implements Player {
   public void previous() {
     if (canPlayPreviousTrack()) {
       currentTrack--;
-      log.info("Playing previous track: {}", musicDao.getById(currentTrack).getAuthor());
+      log.info("Playing previous track: {}", musicDao.getById(currentTrack));
       notifyObserversTrackChange();
       return;
     }

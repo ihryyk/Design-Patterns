@@ -1,1 +1,1 @@
-[{"name":"testMusic1","author":"testAuthor1"}, {"name":"testMusic2","author":"testAuthor2"}, {"name":"testMusic3","author":"testAuthor3"}]
+[{"name":"testMusic1"}, {"name":"testMusic2"}, {"name":"testMusic3"}]
